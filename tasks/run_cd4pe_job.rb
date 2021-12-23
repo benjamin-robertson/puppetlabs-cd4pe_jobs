@@ -601,6 +601,6 @@ if __FILE__ == $0 # This block will only be invoked if this file is executed. Wi
     job_runner.send_job_output_to_cd4pe({ status: 'failure', error: e.message, logs: @logger.get_logs })
     exit 1
   ensure
-    delete_dir(@working_dir)
+    #delete_dir(@working_dir)
   end
 end
